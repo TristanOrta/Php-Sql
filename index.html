@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+
+
+
+
+
+
+
+ 
+
+	<title>Software X</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/stylo.css">
+</head>
+<body>
+		<form action="in.php" method="POST">
+
+ 
+
+<!------------------------Cabecera------------------------------>
+	<header id="cabezera">
+		<nav id="barra">
+			<ul>
+				<li ><a href="#">Inicio</a></li>
+				<li ><a href="#">Suscribirse</a></li>
+			<li><a  href="javascript:abrir2()">Iniciar Sesion</a></li>	
+			</ul>
+		</nav>
+	</header>
+	<section id="cuerpo">
+		<div id="letrero">
+		 	<h1>SOFTWARE X</h1>
+			<h2>El mejor software para ti</h2>
+			<p>Suscribete para resibir mas información</p>
+			<a class="suscribirse" href="javascript:abrir()">Suscribete</a>
+			
+		</div>
+		
+
+	</section>
+
+	<!--------------------FORMULARIO UNO---------------->
+	<section id="formulario">
+		<table id="form">
+
+			
+			<tr>
+				<td><label class="etiqueta">Nombre</label></td>
+				<td><input type="text" name="" placeholder="nombre completo"></td>
+			</tr>
+			<tr>
+				<td><label class="etiqueta">Ocupacion</label> </td>
+				<td><input type="text" name="" placeholder="Ocupación"></td>
+			</tr>
+			<tr id="ultimo">
+				<td><label class="etiqueta">Correo Electronico</label></td>
+				<td><input type="" name="" placeholder="Correo Electronico"></td>
+			</tr>
+			<tr>
+				<td><a class="suscribirse" id="cerrar" href="javascript:cerrar()">Cerrar</a></td>
+				<td><a class="suscribirse" id="enviar2" href="#">Enviar</a></td>
+				
+			</tr>
+		</table>
+
+	</section>
+
+
+	<!------------------------FORMULARIO DOS----------------->
+	<section id="formulario2">
+		<form name="login" method="post" action="login.php">
+			<table id="form">
+	
+				
+				<tr>
+					<td><label class="etiqueta">Usuario</label></td>
+					<td><input type="text" name="" placeholder="Nick Name" id="nick"></td>
+				</tr>
+				<tr>
+					<td><label class="etiqueta">Contraseña</label> </td>
+					<td><input type="text" name="" placeholder="Password" id="pass"></td>
+				</tr>
+			
+					<td><a class="suscribirse" id="cerrar" href="javascript:cerrar()">Cerrar</a></td>
+					<td><a class="suscribirse" id="enviar" href="">Enviar</a></td>
+				</tr>
+			</table>
+	
+		</section>
+
+
+ <!-- ***************JS*****************  -->
+
+
+	<script type="text/javascript">
+		function abrir(){
+			document.getElementById("formulario").style.display="block";
+			document.getElementById("formulario2").style.display="none";
+
+		}
+
+
+		function abrir2(){
+			document.getElementById("formulario2").style.display="block";
+			document.getElementById("formulario").style.display="none";
+
+		}
+
+	
+
+		function cerrar(){
+			document.getElementById("formulario").style.display="none";
+			document.getElementById("formulario2").style.display="none";
+
+		}
+	</script>
+	
+
+		</form>
+</body>
+</html>
