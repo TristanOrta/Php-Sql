@@ -49,7 +49,7 @@
 	width: 100%;  
 	height: 512px;
 	margin: 20px auto;
-	background: url(fondo1.jpg);
+	background: url(../fo.gif);
 	background-size: cover;
 }
 
@@ -168,12 +168,22 @@
 
 
 
-
-
-
-
-
-
+ button{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 80;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #000000;
+    
+	border: 2px solid #1e1e22;
+	
+	
+  }
+  button:hover{
+    color: #06ec40d3;
+    background-color: #7c0101;
+  }
 
 
 

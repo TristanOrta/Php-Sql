@@ -6,7 +6,7 @@
 
 
 
-
+	
 
 
  
@@ -14,8 +14,12 @@
 	<title>Software X</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/stylo.css">
+	<script src="./JS/cursor.js"></script>
 </head>
 <body>
+
+
+		
 		<form action="in.php" method="POST">
 
  
@@ -25,7 +29,7 @@
 		<nav id="barra">
 			<ul>
 				<li ><a href="#">Inicio</a></li>
-				<li ><a href="#">Suscribirse</a></li>
+				<li ><a href="javascript:abrir()">Suscribirse</a></li>
 			<li><a  href="javascript:abrir2()">Iniciar Sesion</a></li>	
 			</ul>
 		</nav>
@@ -34,61 +38,70 @@
 		<div id="letrero">
 		 	<h1>SOFTWARE X</h1>
 			<h2>El mejor software para ti</h2>
-			<p>Suscribete para resibir mas información</p>
+			<p>Suscribete para recibir mas información</p>
 			<a class="suscribirse" href="javascript:abrir()">Suscribete</a>
-			
+
 		</div>
 		
 
+
 	</section>
+
+	
 
 	<!--------------------FORMULARIO UNO---------------->
 	<section id="formulario">
-		<table id="form">
-
+		<form action="in.php" method="post">
 			
-			<tr>
-				<td><label class="etiqueta">Nombre</label></td>
-				<td><input type="text" name="" placeholder="nombre completo"></td>
-			</tr>
-			<tr>
-				<td><label class="etiqueta">Ocupacion</label> </td>
-				<td><input type="text" name="" placeholder="Ocupación"></td>
-			</tr>
-			<tr id="ultimo">
-				<td><label class="etiqueta">Correo Electronico</label></td>
-				<td><input type="" name="" placeholder="Correo Electronico"></td>
-			</tr>
-			<tr>
-				<td><a class="suscribirse" id="cerrar" href="javascript:cerrar()">Cerrar</a></td>
-				<td><a class="suscribirse" id="enviar2" href="#">Enviar</a></td>
-				
-			</tr>
-		</table>
+			<table id="form">
+
+				<tr>
+					<td><label class="etiqueta">Nombre</label></td>
+					<td><input type="text" name="nombre" placeholder="nombre completo"></td>
+				</tr>
+				<tr>
+					<td><label class="etiqueta">Ocupacion</label> </td>
+					<td><input type="text" name="ocupacion" placeholder="Ocupación"></td>
+				</tr>
+				<tr id="ultimo">
+					<td><label class="etiqueta">Correo Electronico</label></td>
+					<td><input type="" name="correo" placeholder="Correo Electronico"></td>
+				</tr>
+				<tr>
+					<td><a class="suscribirse" id="cerrar" href="javascript:cerrar()">Cerrar</a></td>
+					<td><input class="suscribirse" type="submit" name="suscribirse" value="Suscribirse"> </td>
+					
+				</tr>
+			</table>
+
+
+
+		</form>
+		
 
 	</section>
 
 
 	<!------------------------FORMULARIO DOS----------------->
 	<section id="formulario2">
-		<form name="login" method="post" action="login.php">
-			<table id="form">
+		<form name="login" method="post" action="in.php">
+			<table id="formu">
 	
 				
 				<tr>
 					<td><label class="etiqueta">Usuario</label></td>
-					<td><input type="text" name="" placeholder="Nick Name" id="nick"></td>
+					<td><input type="text" name="nick" placeholder="Nick Name" ></td>
 				</tr>
 				<tr>
 					<td><label class="etiqueta">Contraseña</label> </td>
-					<td><input type="text" name="" placeholder="Password" id="pass"></td>
+					<td><input type="password" name="pass" placeholder="Password"></td>
 				</tr>
-			
+			    <tr>
 					<td><a class="suscribirse" id="cerrar" href="javascript:cerrar()">Cerrar</a></td>
-					<td><a class="suscribirse" id="enviar" href="">Enviar</a></td>
+					<td><input class="suscribirse" type="submit" value="Ingresar" name="ingresar"></td>
 				</tr>
 			</table>
-	
+	    </form>
 		</section>
 
 
