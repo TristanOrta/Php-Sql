@@ -6,6 +6,16 @@ require ("./conexion.php");
     $resultado=mysqli_query($db,$consulta);
 
 
+
+
+
+
+
+
+    $id_soft=$_POST['id'];
+    $consulta="DELETE FROM `soft` WHERE `soft`.`id_soft` =".$id_sof;
+    $resultado=mysqli_query($db,$consulta);
+
     
 
 ?>
